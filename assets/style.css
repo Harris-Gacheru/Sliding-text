@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container{
+    width: 400px;
+    height: 40px;
+    background-color: #ddd;
+    box-shadow: -8px 0px 6px #bbbbbb inset;
+    overflow: hidden;
+}
+
+.text-container p{
+    color: red;
+    margin: 10px 0;
+    transform: translateX(100%);
+    animation-name: slide;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slide {
+    from{transform: translateX(100%);}
+    to{transform: translateX(-100%);}
+}
